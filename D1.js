@@ -10,11 +10,11 @@ REGOLE
 /* ESERCIZIO 1
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
-/* -String: definita tramite l'utilizzo degli apici e indica uno o più caratteri 
--Number: un carattere numerico intero o decimale
+/* -String: definita tramite l'utilizzo degli apici e indica uno o più caratteri (es. "Marco"/"Si"/"120")
+-Number: un carattere numerico intero o decimale(es. 10,50,5.5)
 -Boolean: ammette due soli valori true o false
--Undefined: indica una variabile senza valore assegnato
--Null: assenza intenzionale di un oggetto
+-Undefined: indica una variabile senza valore assegnato (variabile vuota)
+-Null: assenza intenzionale di un oggetto (variabile svuotata)
 */
 
 /* ESERCIZIO 2
@@ -24,6 +24,7 @@ REGOLE
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let myName = "Gianmarco";
+// Definizione della variabile "myName" //
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
@@ -32,7 +33,10 @@ let myName = "Gianmarco";
 /* SCRIVI QUI LA TUA RISPOSTA */
 let num1 = 12;
 let num2 = 20;
+// Definizione delle variabili "num1" e "num2"  //
+
 console.log(num1 + num2);
+// Somma delle variabili //
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
@@ -40,6 +44,7 @@ console.log(num1 + num2);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let x = 12;
+// Definizione della variabile "x"//
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "myName" già esistente: il tuo cognome.
@@ -49,11 +54,15 @@ let x = 12;
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 myName = "Duilio";
+// Riassegnazione della variabile "myName" //
+
 console.log(myName);
 
 /* console.log(myName);
 const myDog = "Puffy";
-myDog = "Baldo"; */
+myDog = "Baldo";  
+Dimostrazione dell'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const
+*/
 
 /* ESERCIZIO 6
  Esegui una sottrazione tra i numeri 4 e la variable "x" appena dichiarata (che contiene il numero 12).
@@ -61,22 +70,23 @@ myDog = "Baldo"; */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 console.log(4 - x);
+// Sottrazione tra la variabile "x" e il numero 4 //
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
- Verifica che name1 sia diversa da name2 (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
+  (suggerimento: è la stessa cosa di verificare che la loro uguaglianza sia falsa).
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 let name1 = "jhon";
 let name2 = "Jhon";
+// Definizione delle variabili name1 e name2 //
+
 console.log("nome1 è uguale a nome2?", name1 === name2);
+// Verifica della loro ugualianza name1 e name2 //
 
 console.log("se la j diventa minuscola i nomi sono uguali?");
 
-/* name1 = name1.toLowerCase;
-name2 = name2.toLowerCase; 
-*/
-
 console.log(name2.toLowerCase === name1.toLowerCase);
+// La loro uguaglianza diventa true se entrambe vengono trasformate in lowercase //
